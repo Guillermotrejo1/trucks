@@ -47,7 +47,7 @@ function shuffleArray(array) {
 function generateGrid() {
   loteriaContainer.innerHTML = "";
   const shuffledTrucks = shuffleArray([...monsterTrucks]);
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 16; i++) {
     const truck = document.createElement("div");
     truck.classList.add("truck");
     truck.textContent = shuffledTrucks[i].truck;
